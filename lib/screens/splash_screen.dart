@@ -41,7 +41,7 @@ class _SplashScreenState extends State<SplashScreen> {
             ),
             Positioned(
               bottom: 0,
-              right: 0,
+              right: -20,
               child: FlatButton(
                 child: Container(
                 height: 60,

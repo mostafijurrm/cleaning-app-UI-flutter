@@ -31,6 +31,7 @@ dependencies:
   google_fonts: ^1.1.0
   sms_autofill: ^1.2.4
   circular_check_box: ^1.0.4
+  clipboard_manager: ^0.0.4
 
 dev_dependencies:
   flutter_test:
