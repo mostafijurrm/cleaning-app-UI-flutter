@@ -1,4 +1,5 @@
 import 'package:circular_check_box/circular_check_box.dart';
+import 'package:cleaning_app_ui/screens/account_screen.dart';
 import 'package:cleaning_app_ui/utils/dimensions.dart';
 import 'package:cleaning_app_ui/utils/my_color.dart';
 import 'package:cleaning_app_ui/utils/my_string.dart';
@@ -33,18 +34,31 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   ),
                 ),
                 Positioned(
-                  top: 60,
+                  top: 40,
                     child: Container(
                       width: MediaQuery.of(context).size.width,
-                      child: Align(
-                        alignment: Alignment.center,
-                        child: Text(
-                          MyString.NIMBOL,
-                          style: GoogleFonts.ubuntu(
-                              color: ColorResources.white,
-                              fontSize: Dimensions.defaultText,
-                              fontWeight: FontWeight.bold
-                          ),
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 20.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              MyString.NIMBOL,
+                              style: GoogleFonts.ubuntu(
+                                  color: ColorResources.white,
+                                  fontSize: Dimensions.defaultText,
+                                  fontWeight: FontWeight.bold
+                              ),
+                            ),
+                            FlatButton(
+                              child: CircleAvatar(
+                                child: Image.asset('assets/profile.png'),
+                              ),
+                              onPressed: (){
+                                Navigator.of(context).push(MaterialPageRoute(builder: (context) => AccountScreen()));
+                              },
+                            )
+                          ],
                         ),
                       ),
                     )),
