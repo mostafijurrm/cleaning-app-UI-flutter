@@ -3,9 +3,10 @@
 A new Flutter application.
 
 # Screenshots
-![Test Image 3](/Screenshot_1599307068.png)
+![Screenshot_1](/Screenshot_1599307068.png)
 
-![Test Image 3](/Screenshot_1599303435.png)
+![Screenshot_2](/Screenshot_1599303435.png)
+![Screenshot_3](/Screenshot_1599389678.png)
 
 ## Getting Started
 
